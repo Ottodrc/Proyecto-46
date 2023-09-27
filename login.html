@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <img src="recursos/logo.jpg" alt="Logo de la escuela" class="img-fluid">
+        </div>
+        <h2 class="text-center">Proyecto 46</h2>
+        <form action="procesar_login.php" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" class= "form-control custom-input" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" class="form-control custom-input" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+        </form>
+        Aun no tienes cuenta?<a href="">Registrate</a>
+    </div>
+
+    <!-- Incluye la biblioteca JavaScript de Bootstrap al final del cuerpo del documento para que los componentes de Bootstrap funcionen correctamente -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
