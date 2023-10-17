@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333; /* Color de fondo del encabezado */
+            color: #fff; /* Color de texto */
+            padding: 10px 0; /* Aumentar el espacio superior e inferior */
+            display: flex; /* Utilizar flexbox para el diseño */
+            justify-content: space-between; /* Distribuir elementos horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+        }
+
+        nav {
+            margin-left: 100px; /* Ocupa el espacio restante */
+            text-align: center; /* Alinea el texto al centro */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .search {
+            text-align: center; /* Centra el botón de búsqueda */
+        }
+
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%; /* Asegura que el campo de búsqueda se expanda */
+        }
+
+        /* Estilos para los botones y el buscador */
+        .button {
+            padding: 10px 20px;
+            background-color: #777;
+            color: #fff;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 12px;
+            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        }
+
+        /* Estilos para el rectángulo y el título */
+        .rectangle {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            margin: 25px; /* Centra horizontalmente */
+            height: 600px;
+        }
+
+        .rectangle h1 {
+            font-size: 24px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="button">Home</a></li>
+                <li><a href="#" class="button">Materias</a></li>
+                <li><a href="#" class="button">Grupos</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input class="search-input" type="text" placeholder="Buscar">
+        </div>
+        <div class="actions">
+            <a href="#" class="button">Mensajes</a>
+            <a href="perfil.php" class="button">Perfil</a>
+            <a href="#" class="button">Configuración</a>
+        </div>
+    </header>
+
+    <div class="rectangle">
+        <h1>Publicaciones Recientes</h1>
+
+    </div>
+</body>
+</html>
