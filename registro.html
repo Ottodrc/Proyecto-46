@@ -13,18 +13,23 @@
             <img src="recursos/logo.jpg" alt="Logo de la escuela" class="img-fluid">
         </div>
         <h2 class="text-center">Proyecto 46</h2>
-        <form action="validacion.php" method="post">
+        <form action="nuevosusuarios.php" method="post">
             <div class="form-group">
-                <label for="usuario">Usuario:</label>
-                <input type="text" class= "form-control custom-input" id="usuario" name="usuario" required>
+                <label for="usuario">Nuevo usuario:</label>
+                <input type="text" class= "form-control custom-input" id="nuevousuario" name="nuevousuario" required>
             </div>
             <div class="form-group">
                 <label for="contrasena">Contraseña:</label>
-                <input type="password" class="form-control custom-input" id="contrasena" name="contrasena" required>
+                <input type="password" class="form-control custom-input" id="password" name="password" required>
             </div>
+
+            <div class="form-group">
+                <label for="contrasena">Repita contraseña:</label>
+                <input type="password" class="form-control custom-input" id="repetir" name="repetir" required>
+            </div>
+
             <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
         </form>
-        Aun no tienes cuenta?<a href="">Registrate</a>
     </div>
 
     <!-- Incluye la biblioteca JavaScript de Bootstrap al final del cuerpo del documento para que los componentes de Bootstrap funcionen correctamente -->
