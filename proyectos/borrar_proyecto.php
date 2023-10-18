@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <?php
-        require "..\bd.php";
+        require "../bd.php";
 
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
             if (isset($_GET['id']) && is_numeric($_GET['id'])) {

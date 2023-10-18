@@ -12,7 +12,7 @@
     <div class="container mt-4">
         <h2>Editar Proyecto</h2>
         <?php
-        require "..\bd.php";
+        require "../bd.php";
 
         if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             $id = $_GET['id'];

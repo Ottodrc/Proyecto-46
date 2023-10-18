@@ -20,7 +20,7 @@
             </thead>
 
             <?php
-            require "..\bd.php";
+           require("../bd.php");
             $mysqli = new mysqli($db_host, $db_user, $db_pass, "Proyecto46");
 
             if ($mysqli->connect_error) {

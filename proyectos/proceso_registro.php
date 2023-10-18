@@ -12,7 +12,7 @@
     <div class="container">
         <h2 class="my-4">Registro de Proyectos</h2>
         <?php
-        require "..\bd.php";
+        require "../bd.php";
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $nombre_proyecto = $_POST["nombre_proyecto"];
             $resumen = $_POST["resumen"];

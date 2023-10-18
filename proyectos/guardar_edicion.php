@@ -12,7 +12,7 @@
     <div class="container">
         <h2 class="my-4">Actualizar Proyecto</h2>
         <?php
-        require("..\bd.php");
+        require("../bd.php");
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST['id']) && is_numeric($_POST['id'])) {
