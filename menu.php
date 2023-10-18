@@ -88,7 +88,7 @@ echo"Entraste";
         <nav>
             <ul>
                 <li><a href="#" class="button">Home</a></li>
-                <li><a href="#" class="button">Materias</a></li>
+                <li><a href="proyectos.php" class="button">Proyectos</a></li>
                 <li><a href="#" class="button">Grupos</a></li>
             </ul>
         </nav>
