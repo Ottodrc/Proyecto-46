@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro de Proyectos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registrar Nuevo Proyecto</h2>
+        <form action="proceso_registro.php" method="post">
+            <label for="nombre_proyecto">Nombre del Proyecto:</label>
+            <input type="text" name="nombre_proyecto" required>
+
+            <label for="resumen">Resumen:</label>
+            <textarea name="resumen" required></textarea>
+
+            <label for="integrantes">Integrantes:</label>
+            <input type="text" name="integrantes" required>
+
+            <label for="numero_grupo">Número de Grupo:</label>
+            <input type="number" name="numero_grupo" required>
+
+            <label for="carrera">Carrera:</label>
+            <select name="carrera">
+                <option value="DS">DS</option>
+                <option value="AF">AF</option>
+                <option value="ITI">ITI</option>
+            </select>
+
+
+            <label for="ano">Año:</label>
+            <input type="number" name="ano" required>
+
+            <label for="materia">Materia:</label>
+            <input type="text" name="materia" required>
+
+            <label for="profesor">Profesor a Cargo:</label>
+            <input type="text" name="profesor" required>
+
+            <button type="submit">Guardar Proyecto</button>
+        </form>
+    </div>
+</body>
+
+</html>
