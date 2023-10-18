@@ -5,7 +5,7 @@ require("session.php");
 //una vez logueado el usuario no se tiene que loguear
 if(isset($_SESSION["usuario"]))
 {
-    header ("Location: accesoConcedido.php");
+    header ("Location:menu.php");
     exit();
 }
 ?>
@@ -32,7 +32,7 @@ if(isset($_POST["usuario"]))
 if(mysqli_num_rows($resultadoUsuario) > 0 && mysqli_num_rows($resultadoContrasena) > 0 ){
     $_SESSION["usuario"]=$usuario;
     $_SESSION["contrasena"]=$contrasena;
-    header('Location:accesoConcedido.php');//entra a un programa
+    header('Location:menu.php');//entra a un programa
    }
    else
 {
