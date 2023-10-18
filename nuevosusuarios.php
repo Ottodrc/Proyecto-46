@@ -1,8 +1,10 @@
 <?php
+require "bd.php";
+
 $usuarioNuevo= $_POST["nuevousuario"];
 $contrasenaNueva= $_POST["nuevapassword"];
 $repitaContrasenaNueva= $_POST["repetir"];
-$conexion= new mysqli("localhost", "root", "123456789", "usuarios");
+$conexion= new mysqli($db_host, $db_user, $db_pass, "usuarios");
 if(!$conexion)
 {   
 die("No hemos podido conectarnos a la base de datos:" . mysqli_connect_errno());

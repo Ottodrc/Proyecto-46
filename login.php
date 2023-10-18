@@ -1,5 +1,6 @@
 <?php
 require("session.php");
+require "bd.php";
 ?>
 <?php
 //una vez logueado el usuario no se tiene que loguear
@@ -12,7 +13,7 @@ if (isset($_SESSION["usuario"])) {
 //para saber si llamo la 1ra vez o la 2da, si no hay nada en usuario baja al form, sino
 if (isset($_POST["usuario"])) {
     //conecto a base de datos
-    $conexion = new mysqli("localhost", "root", "", "proyecto46s");
+    $conexion = new mysqli($db_host, $db_user, $db_pass, "proyecto46s");
     if (!$conexion) {
         die("No hemos podido conectarnos a la base de datos:" . mysqli_connect_errno());
     };

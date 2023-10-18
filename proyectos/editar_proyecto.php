@@ -9,11 +9,13 @@
 <body>
     <h2>Editar Proyecto</h2>
     <?php
+    require  "bd.php";
+
     if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         $id = $_GET['id'];
 
 
-        $mysqli = new mysqli("localhost", "root", "", "Proyecto46");
+        $mysqli = new mysqli($db_host, $db_user, $db_pass, "Proyecto46");
 
         if ($mysqli->connect_error) {
             die("Error de conexión a la base de datos: " . $mysqli->connect_error);

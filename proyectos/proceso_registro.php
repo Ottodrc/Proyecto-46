@@ -8,6 +8,7 @@
 
 <body>
     <?php
+    require "bd.php";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nombre_proyecto = $_POST["nombre_proyecto"];
         $resumen = $_POST["resumen"];
@@ -19,7 +20,7 @@
         $profesor = $_POST["profesor"];
 
 
-        $mysqli = new mysqli("localhost", "root", "", "Proyecto46");
+        $mysqli = new mysqli($db_host, $db_root, $db_pass, "Proyecto46");
 
         if ($mysqli->connect_error) {
             die("Error de conexión a la base de datos: " . $mysqli->connect_error);

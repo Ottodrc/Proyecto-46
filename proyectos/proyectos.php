@@ -17,8 +17,8 @@
         </tr>
 
         <?php
-
-        $mysqli = new mysqli("localhost", "root", "", "Proyecto46");
+        require "bd.php";
+        $mysqli = new mysqli($db_host, $db_user, $db_pass, "Proyecto46");
 
         if ($mysqli->connect_error) {
             die("Error de conexión a la base de datos: " . $mysqli->connect_error);
