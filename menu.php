@@ -1,10 +1,11 @@
 <?php
 require("session.php");
 verificar_sesion();
-echo"Entraste";
+echo "Entraste";
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Mi Página Web</title>
@@ -16,17 +17,25 @@ echo"Entraste";
         }
 
         header {
-            background-color: #333; /* Color de fondo del encabezado */
-            color: #fff; /* Color de texto */
-            padding: 10px 0; /* Aumentar el espacio superior e inferior */
-            display: flex; /* Utilizar flexbox para el diseño */
-            justify-content: space-between; /* Distribuir elementos horizontalmente */
-            align-items: center; /* Centrar verticalmente */
+            background-color: #333;
+            /* Color de fondo del encabezado */
+            color: #fff;
+            /* Color de texto */
+            padding: 10px 0;
+            /* Aumentar el espacio superior e inferior */
+            display: flex;
+            /* Utilizar flexbox para el diseño */
+            justify-content: space-between;
+            /* Distribuir elementos horizontalmente */
+            align-items: center;
+            /* Centrar verticalmente */
         }
 
         nav {
-            margin-left: 100px; /* Ocupa el espacio restante */
-            text-align: center; /* Alinea el texto al centro */
+            margin-left: 100px;
+            /* Ocupa el espacio restante */
+            text-align: center;
+            /* Alinea el texto al centro */
         }
 
         nav ul {
@@ -41,7 +50,8 @@ echo"Entraste";
         }
 
         .search {
-            text-align: center; /* Centra el botón de búsqueda */
+            text-align: center;
+            /* Centra el botón de búsqueda */
         }
 
         .search-input {
@@ -49,7 +59,8 @@ echo"Entraste";
             border: none;
             border-radius: 5px;
             font-size: 16px;
-            width: 100%; /* Asegura que el campo de búsqueda se expanda */
+            width: 100%;
+            /* Asegura que el campo de búsqueda se expanda */
         }
 
         /* Estilos para los botones y el buscador */
@@ -63,7 +74,8 @@ echo"Entraste";
             display: inline-block;
             font-size: 16px;
             margin: 12px;
-            cursor: pointer; /* Cambia el cursor al pasar el mouse */
+            cursor: pointer;
+            /* Cambia el cursor al pasar el mouse */
         }
 
         /* Estilos para el rectángulo y el título */
@@ -71,24 +83,26 @@ echo"Entraste";
             background-color: #f0f0f0;
             text-align: center;
             padding: 20px;
-            margin: 25px; /* Centra horizontalmente */
+            margin: 25px;
+            /* Centra horizontalmente */
             height: 600px;
         }
 
         .rectangle h1 {
             font-size: 24px;
 
-            
+
         }
     </style>
 </head>
+
 <body>
     <header>
 
         <nav>
             <ul>
                 <li><a href="#" class="button">Home</a></li>
-                <li><a href="proyectos.php" class="button">Proyectos</a></li>
+                <li><a href="proyectos/proyectos.php" class="button">Proyectos</a></li>
                 <li><a href="#" class="button">Grupos</a></li>
             </ul>
         </nav>
@@ -99,7 +113,7 @@ echo"Entraste";
             <a href="#" class="button">Mensajes</a>
             <a href="perfil.php" class="button">Perfil</a>
             <a href="#" class="button">Configuración</a>
-            <a href="longout.php"class="button">Salir</a>
+            <a href="longout.php" class="button">Salir</a>
         </div>
     </header>
 
@@ -109,4 +123,5 @@ echo"Entraste";
     </div>
 </body>
 <li><a href="longout.php">Salir</a></li>;
+
 </html>
