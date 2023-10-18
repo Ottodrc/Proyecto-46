@@ -1,0 +1,13 @@
+CREATE TABLE proyectos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_proyecto VARCHAR(255) NOT NULL,
+    resumen TEXT NOT NULL,
+    integrantes VARCHAR(255) NOT NULL,
+    numero_grupo INT NOT NULL,
+    carrera VARCHAR(255) NOT NULL,
+    ano INT NOT NULL,
+    materia VARCHAR(255) NOT NULL,
+    profesor VARCHAR(255) NOT NULL
+);
+
+//Con esto crean la tabla para probrar proyectos(peguen en la query de MySql)

@@ -2,7 +2,4 @@
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
-$db_name = 'Usuario';
-
-
-?>
+$db_name = 'proyecto46s';
